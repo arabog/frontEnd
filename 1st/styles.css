@@ -8,21 +8,22 @@
 
 body {
           background: #eee;
+          font-size: 10px;
 }
 
 .container {
           background: #fff;
           width: 207px;
-          height: 415px;
           margin: 0 auto;
           position: absolute;
-          top: 20%;
-          transform: translateY(-20%);
+          top: 10%;
+          transform: translateY(-10%);
           left: 50%;
           transform: translateX(-50%);
           overflow: hidden;
-
+          font-size: 1rem;
 }
+
 .inner-container {
           padding: 13px;
 }
@@ -32,7 +33,7 @@ body {
           justify-content: left;
           align-items: center;
           padding-bottom: 5px;
-          /* border: 2px solid grey; */
+          height: 5vh;
 }
 
 .nav p {
@@ -54,7 +55,7 @@ body {
           top: 0;
           left: 0;
           width: 75%;
-          height: 75vh;
+          height: 80vh;
           background: grey;
           display: flex;
           flex-direction: column;
@@ -78,8 +79,8 @@ body {
 .open .fa-times {
           display: block;
           position: absolute;
-          top: 10px;
-          right: 65px;
+          top: 20px;
+          right: 35%;
           color: #fff;
 }
 .nav-list {
@@ -91,6 +92,7 @@ body {
           color: #fff;
           text-decoration: none;
 }
+
 .content >p:first-child {
           text-align: center;
           margin: 10px 0;
@@ -100,9 +102,9 @@ form > div {
           display: block;
 }
 form > div input {
-          margin-bottom: 10px;
+          margin-bottom: 8px;
           width: 100%;
-          padding: 4px 6px;
+          padding: 6.5px 6px;
           outline: none;
           background: rgb(241, 239, 239);
           border: none;
@@ -124,8 +126,24 @@ form > div input {
           margin-left: 15px;
 }
 
-.content .next {
-          margin: 15px 0;
+.content .circles {
+          display: flex;
+          justify-content: center;
+}
+
+.content .circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 25px;
+          background: #C4C4C4;
+          margin: 7px 3px 5px 0;
+}
+.content .filled {
+          background:  linear-gradient(179.83deg, #341F97 -100.68%, #0A674F 99.85%);          
+}
+
+.content .btn {
+          margin: 6px 0 8px;
           padding: 5px 10px;
           background: #0A674F;
           display: block;
@@ -134,13 +152,20 @@ form > div input {
           text-decoration: none;
 }
 
+.cont-btn {
+          display: flex;
+          justify-content: space-between;
+
+}
+
 /* footer */
 footer {
           background: #2A1979;
           color: #fff;
-          padding: 0.5rem;
+          padding: 2.6rem 0;
           font-size: 10px;
           text-align: center;
+          height: 23vh;
 }
 
 footer a {
@@ -151,8 +176,7 @@ footer a {
 footer .social {
           display: flex;
           justify-content: center;
-          margin-bottom: 7px;
-
+          margin-bottom: 10px;
 }
 
 footer .social li{
@@ -165,6 +189,7 @@ footer .social a{
 footer .links {
           display: flex;
           justify-content: center;
+          margin-bottom: 5px;
 }
 
 footer .links li {
@@ -172,11 +197,42 @@ footer .links li {
 }
 
 footer .links li a{
-          font-size: 0.5rem;
-          margin-right: 4px;
+          font-size: 0.51rem;
+          margin-right: 3.5px;
           text-decoration: none;
 }
 
 footer p {
           padding: 5px 0;
+          font-size: 0.51rem;
+}
+
+@media screen and (min-width: 650px) {
+          .container {
+                    width: 40%;
+                    position: absolute;
+                    top: 10%;
+                    transform: translateY(-10%);
+                    left: 50%;
+                    transform: translateX(-50%);
+          }
+          
+          footer .links li a{
+                    font-size: 0.6rem;
+          }
+}
+
+@media screen and (min-width: 750px) {
+          .container {
+                    width: 20rem;
+          }
+
+          footer {
+                    padding: 2.2rem 0;
+          }
+
+          footer .links li a{
+                    font-size: 0.7rem;
+                    padding-right: 9px;
+          }
 }
