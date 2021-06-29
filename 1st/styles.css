@@ -13,19 +13,14 @@ body {
 
 .container {
           background: #fff;
-          width: 207px;
-          margin: 0 auto;
-          position: absolute;
-          top: 10%;
-          transform: translateY(-10%);
-          left: 50%;
-          transform: translateX(-50%);
-          overflow: hidden;
           font-size: 1rem;
+          padding: 3.5rem 4rem;
+          height: 100vh;
+          text-align: center;
 }
 
 .inner-container {
-          padding: 13px;
+          text-align: left;
 }
 
 .nav {
@@ -41,11 +36,10 @@ body {
 }
 
 .menu {
-          z-index: 9;
+          z-index: 7;
           cursor: pointer;
           font-size: 20px;
 }
-
 
 .fa-times{
           display: none;
@@ -55,21 +49,19 @@ body {
           top: 0;
           left: 0;
           width: 75%;
-          height: 80vh;
+          height: 100vh;
           background: grey;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           padding: 10px;
-          z-index: 8;
+          z-index: 6;
           transform: translateX(-100%);
-          opacity: 0;
-          transition: transform 0.8s;
+          transition: transform 0.5s;
 }
 
 .open .nav-item {
           transform: translateX(0);
-          opacity: 1;
 }
 
 .open .fa-bars {
@@ -129,6 +121,7 @@ form > div input {
 .content .circles {
           display: flex;
           justify-content: center;
+          margin-top: 0.5rem;
 }
 
 .content .circle {
@@ -143,7 +136,7 @@ form > div input {
 }
 
 .content .btn {
-          margin: 6px 0 8px;
+          margin: 15px 0 0;
           padding: 5px 10px;
           background: #0A674F;
           display: block;
@@ -155,17 +148,17 @@ form > div input {
 .cont-btn {
           display: flex;
           justify-content: space-between;
-
 }
 
 /* footer */
 footer {
           background: #2A1979;
           color: #fff;
-          padding: 2.6rem 0;
-          font-size: 10px;
+          padding: 1.5rem 0;
+          font-size: 5px;
           text-align: center;
-          height: 23vh;
+          height: 20vh;
+          margin-top: 1rem;
 }
 
 footer a {
@@ -183,7 +176,7 @@ footer .social li{
           list-style: none;
 }
 footer .social a{
-          font-size: 0.75rem;
+          font-size: 1rem;
 }
 
 footer .links {
@@ -197,42 +190,28 @@ footer .links li {
 }
 
 footer .links li a{
-          font-size: 0.51rem;
-          margin-right: 3.5px;
+          font-size: 0.41rem;
+          margin-right: 4px;
           text-decoration: none;
 }
 
 footer p {
           padding: 5px 0;
-          font-size: 0.51rem;
+          font-size: 0.7rem;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 450px) {
           .container {
-                    width: 40%;
-                    position: absolute;
-                    top: 10%;
-                    transform: translateY(-10%);
-                    left: 50%;
-                    transform: translateX(-50%);
+                    padding: 3.5rem 5rem;
           }
           
           footer .links li a{
-                    font-size: 0.6rem;
+                    font-size: 0.8rem;
           }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 600px) {
           .container {
-                    width: 20rem;
-          }
-
-          footer {
-                    padding: 2.2rem 0;
-          }
-
-          footer .links li a{
-                    font-size: 0.7rem;
-                    padding-right: 9px;
+                    padding: 3.5rem 8rem;
           }
 }
